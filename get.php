@@ -7,12 +7,12 @@ $nome = $_POST['nome'];
 $senha = $_POST['senha'];
 
 $con = new PDO (
-    'mysql:dbname=singin-singup;port=3307',
+    'mysql:dbname=aprecat;port=3307',
     'root',
     'root'
 );
 
-$result = $con->query('SELECT * FROM user');
+$result = $con->query('SELECT * FROM cats');
 
 $data = $result->fetchAll(PDO::FETCH_ASSOC);
 

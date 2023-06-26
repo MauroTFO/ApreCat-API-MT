@@ -1,10 +1,8 @@
-<?php 
-
+<?php
 header("Access-Control-Allow-Origin: *");
 
-$email = $_POST['email'];
-$nome = $_POST['nome'];
-$senha = $_POST['senha'];
+$nome = $_POST['name'];
+$senha = $_POST['age'];
 
 $con = new PDO (
     'mysql:dbname=aprecat;port=3307',
